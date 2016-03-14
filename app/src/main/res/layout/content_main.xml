@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.tacademy.samplenumberpicker.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:id = "@+id/Rlayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id = "@+id/Rlayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/downButton1"
+                android:layout_width="60dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView1"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/upButton1"
+                android:layout_alignRight="@+id/upButton1"
+                android:layout_below="@+id/upButton1"
+                android:background="#d7d7d7"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="2016">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/upButton1"
+                android:layout_width="60dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="+" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="년"
+                android:id="@+id/textView"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView1"
+                android:layout_toEndOf="@+id/textView1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/Rlayout2"
+            android:layout_toRightOf="@+id/Rlayout1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/downButton2"
+                android:layout_width="40dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/upButton2"
+                android:layout_alignRight="@+id/upButton2"
+                android:layout_below="@+id/upButton2"
+                android:background="#d7d7d7"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="1">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/upButton2"
+                android:layout_width="40dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="+" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="월"
+                android:id="@+id/textView22"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/Rlayout3"
+            android:layout_toRightOf="@+id/Rlayout2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/downButton3"
+                android:layout_width="40dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView3"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/upButton3"
+                android:layout_alignRight="@+id/upButton3"
+                android:layout_below="@+id/upButton3"
+                android:background="#d7d7d7"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="1">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/upButton3"
+                android:layout_width="40dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="+" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="일"
+                android:id="@+id/textView33"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_toEndOf="@+id/textView3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/Rlayout4"
+            android:layout_toRightOf="@+id/Rlayout3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/downButton4"
+                android:layout_width="40dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView4"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/upButton4"
+                android:layout_alignRight="@+id/upButton4"
+                android:layout_below="@+id/upButton4"
+                android:background="#d7d7d7"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="1">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/upButton4"
+                android:layout_width="40dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="+" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="시"
+                android:id="@+id/textView44"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_toEndOf="@+id/textView4" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/Rlayout5"
+            android:layout_toRightOf="@+id/Rlayout4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/downButton5"
+                android:layout_width="40dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView5"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/upButton5"
+                android:layout_alignRight="@+id/upButton5"
+                android:layout_below="@+id/upButton5"
+                android:background="#d7d7d7"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="1">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/upButton5"
+                android:layout_width="40dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="+" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="분"
+                android:id="@+id/textView55"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView5"
+                android:layout_toEndOf="@+id/textView5" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
